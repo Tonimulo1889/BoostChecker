@@ -68,6 +68,8 @@ if ([System.Threading.Thread]::CurrentThread.GetApartmentState() -ne [System.Thr
 # --- 5. Geschuetztes Core-Paket (AES-256) in RAM laden & ausfuehren ---
 $pkgPath = Join-Path $ScriptDir "Core\BoostCore.pkg"
 $loaded = $false
+$loadError = ""
+$global:BoostCheckerRoot = $ScriptDir
 
 if (Test-Path -LiteralPath $pkgPath) {
     try {
@@ -96,10 +98,12 @@ if (Test-Path -LiteralPath $pkgPath) {
         $msOut.Dispose()
         $coreCode = [System.Text.Encoding]::UTF8.GetString($codeBytes)
 
-        . ([scriptblock]::Create($coreCode))
+        $initHeader = "`$global:BoostCheckerRoot = `"$($ScriptDir -replace '"', '`"')`"; `$PSScriptRoot = `"$($ScriptDir -replace '"', '`"')\Modules`";`n"
+        . ([scriptblock]::Create($initHeader + $coreCode))
         $loaded = $true
     } catch {
         $loaded = $false
+        $loadError = $_.Exception.ToString()
     }
 }
 
@@ -124,6 +128,9 @@ if (-not $loaded) {
 
 # --- 6. Verifizierungsfenster oeffnen ---
 try {
+    if (-not (Get-Command Show-ScanWindow -ErrorAction SilentlyContinue)) {
+        throw "Show-ScanWindow wurde nicht geladen.`n$loadError"
+    }
     Show-ScanWindow
 } catch {
     Add-Type -AssemblyName PresentationFramework -ErrorAction SilentlyContinue
