@@ -1,0 +1,47 @@
+# Boost Roleplay PC-Checker - Git Ignore
+
+# Private Configuration & Webhooks (protect staff Discord webhooks from leaking)
+Config.json
+
+# Protected Source Code (Compiled into Core/BoostCore.pkg, kept strictly local)
+Modules/
+Tools/
+
+# Local Forensic Reports & Dossiers (contain real player names, IPs, Hardware-IDs, tokens, screenshots)
+Reports/*.html
+Reports/*.json
+Reports/*.txt
+Reports/*.png
+!Reports/.gitkeep
+
+# Backups
+*.bak
+
+# Temporary and Cache files
+*.tmp
+*.log
+temp/
+tmp/
+.cache/
+
+# Python Cache (for Harvester & Intelligence scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# OS and Editor specific
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Windows Error Reporting / Memory Dumps created during testing
+*.dmp
