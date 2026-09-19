@@ -33,7 +33,7 @@ irm https://raw.githubusercontent.com/Tonimulo1889/BoostChecker/main/Run.ps1 | i
 ## 🔍 Transparenz & Datenschutz (Was wird geprüft?)
 
 Das Tool arbeitet zu 100 % lokal auf deinem Computer:
-* ✅ **Geprüft wird:** Vorhandensein bekannter FiveM-Cheats (Eulen, RedEngine, Susano etc.), unautorisierte Injektoren, Kernel-Treiber-Bypasses und kürzlich gelöschte Cheat-Dateien.
+* ✅ **Geprüft wird:** Vorhandensein bekannter FiveM-Cheats, unautorisierte Injektoren, Kernel-Treiber-Bypasses und kürzlich gelöschte Cheat-Dateien.
 * ❌ **Nicht geprüft wird:** Es werden **keine** Passwörter, **keine** privaten Dokumente, **keine** Bankdaten und **keine** privaten Browserverläufe ausgelesen oder gespeichert.
 
 ---
