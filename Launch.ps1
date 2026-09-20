@@ -1,4 +1,4 @@
-﻿# Launch.ps1 - Haupteinstiegspunkt fuer den Boost Roleplay PC Checker
+# Launch.ps1 - Haupteinstiegspunkt fuer den Boost Roleplay PC Checker
 # Prueft Administrator-Rechte, laedt alle Module und startet die Benutzeroberflaeche.
 # Versteckt das Konsolenfenster automatisch fuer ein professionelles App-Feeling.
 
