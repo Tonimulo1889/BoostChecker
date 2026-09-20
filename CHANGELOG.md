@@ -4,6 +4,30 @@ Alle Änderungen, Fehlerbehebungen und System-Upgrades im Überblick.
 
 ---
 
+## [5.0.0] - 20.09.2026
+
+### 🚨 Live Cheater & Bann-Board (Kanal 1551244953911566418)
+* **Interaktives Cheater-Board:**
+  * Auto-Purge: Der Kanal wird vor jedem Update automatisch bereinigt – keine doppelten oder veralteten Nachrichten mehr.
+  * Zeigt die neuesten überführten Cheater inklusive Name, PC, erkannter Cheats und Datum in Echtzeit an.
+  * **Discord Modal Suche:** Klick auf `[🔍 Spieler suchen]` öffnet ein natives Discord-Eingabefenster. Prüft sekundenschnell, ob ein Spieler (Name, SteamID, FiveM-Lizenz oder Discord-ID) als Cheater registriert oder sauber ist.
+  * **Blätter-Funktion:** Über `[📋 Liste durchblättern]` können alle archivierten Fälle seitenweise (5 Fälle pro Seite) mit `[⬅️ Vorherige]` und `[➡️ Nächste]` durchgesehen werden.
+
+### 🏆 Team-Statistiken & Supporter-Leaderboard
+* **Neuer Slash-Command `/teamstats` (sowie `!teamstats`):**
+  * Wertet die Aktivität aller Teammitglieder aus (Gesamt-Checks, überführte Cheater, saubere Checks, letzter aktiver Check).
+  * Sortiertes Leaderboard mit Medaillen (🥇, 🥈, 🥉) für transparente Teamauswertung.
+
+### 🔄 24/7 Hosting & Always-On Autostart
+* **Automatischer Watchdog (`Tools/Start-24-7-Bot.bat`):**
+  * Startet den Bot bei einem unerwarteten Absturz oder Verbindungsabbruch innerhalb von 3 Sekunden automatisch neu.
+* **Windows Autostart Dienst (`Tools/Install-Windows-Autostart.ps1`):**
+  * Richtet den Bot als unsichtbaren 24/7 Hintergrund-Dienst in der Windows-Aufgabenplanung ein. Startet automatisch bei jedem System-Boot.
+* **Linux VPS / Root-Server Ready (`Tools/boostbot.service`):**
+  * Vorgefertigte systemd-Service-Datei für 24/7 Hosting auf Linux / FiveM Hostern (Zap, Hetzner etc.).
+
+---
+
 ## [4.5.0] - 20.09.2026
 
 ### 🛡️ Discord Bot & Slash-Commands
