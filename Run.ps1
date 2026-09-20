@@ -1,4 +1,4 @@
-# ==============================================================================
+﻿# ==============================================================================
 # BOOST ROLEPLAY - OFFICIAL PC-CHECKER CLIENT LAUNCHER
 # Exclusive In-House Forensic Suite for Boost Roleplay
 # Usage: irm https://raw.githubusercontent.com/Tonimulo1889/BoostChecker/main/Run.ps1 | iex
